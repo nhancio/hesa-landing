@@ -1,4 +1,3 @@
-import React from 'react';
 
 function App() {
   return (
@@ -8,7 +7,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
             <div className="flex items-center">
-              <img src="/hesa-logo.jpeg" alt="HESA Logo" className="h-12 w-auto" />
+              <img src="/heas-logo.jpeg" alt="HESA Logo" className="h-12 w-auto" />
               <span className="ml-3 text-2xl font-bold text-gray-900">HESA</span>
             </div>
             <nav className="hidden md:flex space-x-8">
@@ -73,17 +72,18 @@ function App() {
             </p>
           </div>
           
-          {/* Main Growth Metric - Big Number Display */}
+          {/* Main Growth Number */}
           <div className="text-center mb-16">
-            <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl p-12 text-white inline-block">
-              <div className="text-6xl md:text-8xl font-bold mb-4">$100B+</div>
-              <div className="text-2xl opacity-90">Total Market Size</div>
-              <div className="text-lg opacity-75 mt-2">By 2027</div>
+            <div className="text-8xl md:text-9xl font-bold text-blue-600 mb-4">
+              $100B+
+            </div>
+            <div className="text-2xl text-gray-600">
+              Total Market Size by 2027
             </div>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Additional Metrics */}
+
+          {/* Additional Metrics */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-8 text-white text-center">
               <div className="text-4xl md:text-5xl font-bold mb-2">65M+</div>
               <div className="text-lg opacity-90">Rural Households</div>
@@ -148,27 +148,27 @@ function App() {
       </section>
 
       {/* Booking Section */}
-      <section id="booking" className="py-20 bg-white">
+      <section id="booking" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Schedule a Meeting
             </h2>
             <p className="text-xl text-gray-600">
-              Book a consultation with our team to discuss your rural commerce needs
+              Book a consultation with our team
             </p>
           </div>
           
-          <div className="bg-gray-50 rounded-2xl p-8">
+          <div className="max-w-4xl mx-auto">
             <iframe 
-              width="100%" 
-              height="750px" 
-              src="https://hesa.zohobookings.in/portal-embed#/333529000000041054" 
-              frameBorder="0" 
-              allowFullScreen
-              title="HESA Booking Widget"
-              className="rounded-lg"
-            />
+              width='100%' 
+              height='750px' 
+              src='https://hesa.zohobookings.in/portal-embed#/333529000000041054' 
+              frameBorder='0' 
+              allowFullScreen={true}
+              className="rounded-lg shadow-lg"
+            >
+            </iframe>
           </div>
         </div>
       </section>
@@ -271,7 +271,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex items-center justify-center mb-4">
-              <img src="/hesa-logo.jpeg" alt="HESA Logo" className="h-8 w-auto" />
+              <img src="/heas-logo.jpeg" alt="HESA Logo" className="h-8 w-auto" />
               <span className="ml-2 text-xl font-bold">HESA Technologies</span>
             </div>
             <p className="text-gray-400">
