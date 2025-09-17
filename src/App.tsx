@@ -1,4 +1,6 @@
 
+import { Instagram, Linkedin } from 'lucide-react';
+
 function App() {
   return (
     <div className="min-h-screen bg-white">
@@ -45,7 +47,7 @@ function App() {
                   href="mailto:vamsi@hesaglobal.com"
                   className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors text-center"
                 >
-                  Get in Touch
+                  Book a session
                 </a>
               </div>
             </div>
@@ -99,8 +101,35 @@ function App() {
         </div>
       </section>
 
+      {/* Booking Section */}
+      <section id="booking" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Schedule a Meeting
+            </h2>
+            <p className="text-xl text-gray-600">
+              Book a consultation with our team
+            </p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <iframe 
+              width='100%' 
+              height='750px' 
+              src='https://hesa.zohobookings.in/portal-embed#/333529000000041054' 
+              frameBorder='0' 
+              allowFullScreen={true}
+              title="HESA Booking Calendar"
+              className="rounded-lg shadow-lg"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
-      <section id="about" className="py-20 bg-gray-50">
+      <section id="about" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -147,32 +176,6 @@ function App() {
         </div>
       </section>
 
-      {/* Booking Section */}
-      <section id="booking" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Schedule a Meeting
-            </h2>
-            <p className="text-xl text-gray-600">
-              Book a consultation with our team
-            </p>
-          </div>
-          
-          <div className="max-w-4xl mx-auto">
-            <iframe 
-              width='100%' 
-              height='750px' 
-              src='https://hesa.zohobookings.in/portal-embed#/333529000000041054' 
-              frameBorder='0' 
-              allowFullScreen={true}
-              className="rounded-lg shadow-lg"
-            >
-            </iframe>
-          </div>
-        </div>
-      </section>
-
       {/* Reach Out Section */}
       <section id="contact" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -191,9 +194,7 @@ function App() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Vamsi Udayagiri</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clipRule="evenodd" />
-                  </svg>
+                  <Linkedin className="w-5 h-5 text-blue-600 mr-3" />
                   <a 
                     href="https://www.linkedin.com/in/vamsiudayagiri/" 
                     target="_blank" 
@@ -222,9 +223,7 @@ function App() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">HESA Technologies</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clipRule="evenodd" />
-                  </svg>
+                  <Linkedin className="w-5 h-5 text-blue-600 mr-3" />
                   <a 
                     href="https://www.linkedin.com/company/hesa-technologies-pvt-ltd" 
                     target="_blank" 
@@ -235,9 +234,7 @@ function App() {
                   </a>
                 </div>
                 <div className="flex items-center">
-                  <svg className="w-5 h-5 text-pink-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
-                  </svg>
+                  <Instagram className="w-5 h-5 text-pink-600 mr-3" />
                   <a 
                     href="https://www.instagram.com/myhesaapp/" 
                     target="_blank" 
